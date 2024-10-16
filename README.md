@@ -27,9 +27,9 @@ Your task is to develop a Python script capable of detecting anomalies in a cont
 The Exponential Weighted Moving Average (EWMA) algorithm is used for anomaly detection in the streaming data. It updates a smoothed average (EWMA) based on a smoothing factor (alpha), giving more weight to recent data points. The algorithm compares the difference between the current data point and the EWMA to the standard deviation. If the difference exceeds a set threshold (3 times the standard deviation), the point is flagged as an anomaly.
 
 #### Why EWMA is Effective:
-Adapts to Concept Drift: EWMA adapts to changes in data patterns by adjusting the average based on recent trends.
-Handles Noise: The standard deviation helps differentiate anomalies from random noise.
-Efficient for Streaming: EWMA is computationally light and works well for continuous data streams.
+1) Adapts to Concept Drift: EWMA adapts to changes in data patterns by adjusting the average based on recent trends.
+2) Handles Noise: The standard deviation helps differentiate anomalies from random noise.
+3) Efficient for Streaming: EWMA is computationally light and works well for continuous data streams.
 #### Key Points:
 1) Data Stream Simulation: Generates data with seasonal patterns, noise, and random anomalies.
 2) Anomaly Detection: Detects anomalies in real-time using EWMA.
